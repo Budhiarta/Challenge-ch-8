@@ -8,7 +8,7 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {HomePage, SearchPage} from './component';
+import {HomePage, SearchPage, Login} from './component';
 import {createStore, compose, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
@@ -24,7 +24,7 @@ root.render(
     <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/search" element={<SearchPage/>}/>
-        <Route path="/Login" element={<SearchPage/>}/>
+        <Route path="/Login" element={<App/>}/>
     </Routes>
   </BrowserRouter>
   </Provider>

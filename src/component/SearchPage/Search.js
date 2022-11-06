@@ -8,7 +8,7 @@ function refreshPage() {
 class Search extends React.Component{
     constructor(pros) {
       super(pros);
-      this.state = {tipedriver: '',jumlahpenumpang:'',tanggal: '', waktu: ''}
+      this.state = {tipe: '',jumlahpenumpang:'',tanggal: '', waktu: ''}
       this.handleChange = this.handleChange.bind(this)
       this.handleSubmit = this.handleSubmit.bind(this)
       this.Hapus = this.Hapus.bind(this)
@@ -24,7 +24,7 @@ class Search extends React.Component{
     handleSubmit(event) {
       event.preventDefault()
 
-      console.log(this.state.tipedriver);
+      console.log(this.state.tipe);
       console.log(this.state.jumlahpenumpang);
       console.log(this.state.tanggal);
       console.log(this.state.waktu);
@@ -38,7 +38,7 @@ class Search extends React.Component{
       event.preventDefault()
       const jumlahpenumpang = this.state.jumlahpenumpang
       console.log("Jumlah : " + jumlahpenumpang);
-      const data1 = [this.state.jumlahpenumpang, this.state.tipedriver, this.state.tanggal, this.state.waktu]
+      const data1 = [this.state.jumlahpenumpang, this.state.tipe, this.state.tanggal, this.state.waktu]
 
       return data1
     }
@@ -54,7 +54,7 @@ class Search extends React.Component{
                     <div className="d-lg-flex py-4 px-3 rounded-3 shadow bg-white">
                             <div className="col mt-2">
                                 <label className="label">Tipe Driver</label>
-                                <select name="tipedriver" class="form-control" id="driver">
+                                <select name="tipe" class="form-control" id="driver">
                                 <option value="#">Semua Mobil</option>
                                 <option value="true">Dengan Driver</option>
                                 <option value="false">Tanpa Driver</option>
