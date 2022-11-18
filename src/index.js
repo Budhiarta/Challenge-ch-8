@@ -8,7 +8,7 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {HomePage, SearchPage, Login} from './component';
+import {HomePage, SearchPage} from './component';
 import {createStore, compose, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';

@@ -23,6 +23,6 @@ function Header(){
         </div>
       </section>
     );
-};
+}
 
 export default Header;

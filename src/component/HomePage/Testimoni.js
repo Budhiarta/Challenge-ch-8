@@ -73,6 +73,6 @@ function Testimoni(){
     </section>
     </div>
     );
-};
+}
 
 export default Testimoni;

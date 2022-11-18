@@ -35,7 +35,7 @@ function Navbar (){
  
 
   
-        <div className="offcanvas offcanvas-end" tabindex="1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div className="offcanvas offcanvas-end" tabIndex="1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div className="offcanvas-header">
         <h5 className="offcanvas-title" id="offcanvasExampleLabel">BCR</h5>
         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -55,6 +55,6 @@ function Navbar (){
       </div>
     </div>
     );
-};
+}
 
 export default Navbar;

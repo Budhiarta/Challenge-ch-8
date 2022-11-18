@@ -1,7 +1,6 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import LoginButton from "./component/Login";
-import LogoutButton from "./component/Logout";
 import {useEffect} from 'react';
 import {gapi} from 'gapi-script';
 
@@ -15,7 +14,7 @@ function App() {
         clientId: clientId,
         scope: ""
       })
-    };
+    }
 
     gapi.load('client:auth2', start);
   })
@@ -26,8 +25,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-      <LoginButton/>
-      <LogoutButton/>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a

@@ -18,7 +18,8 @@ function getRandomInt(min, max) {
     return hasil
   }
 
-function ListCars({submit, data, jumlahpenumpang,tipedriver,tanggal,waktu}){
+//submit
+function ListCars({ data, jumlahpenumpang,tipedriver,tanggal,waktu}){
     const {getListCarsResult,getListCarsLoading,getListCarsError} = useSelector((state) => state.CarsReducer)
     const dispatch = useDispatch()
     const jumlah = jumlahpenumpang;

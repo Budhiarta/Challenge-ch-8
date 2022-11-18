@@ -44,6 +44,6 @@ function OurService(){
       </div>
       </section>
     );
-};
+}
 
 export default OurService;

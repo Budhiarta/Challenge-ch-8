@@ -54,19 +54,19 @@ class Search extends React.Component{
                     <div className="d-lg-flex py-4 px-3 rounded-3 shadow bg-white">
                             <div className="col mt-2">
                                 <label className="label">Tipe Driver</label>
-                                <select name="tipe" class="form-control" id="driver">
+                                <select name="tipe" className="form-control" id="driver">
                                 <option value="#">Semua Mobil</option>
                                 <option value="true">Dengan Driver</option>
                                 <option value="false">Tanpa Driver</option>
                                 </select>
                             </div>
-                            <div class="col mt-2">
-                              <label for="tgl">Tanggal</label>
-                                <input type="date" name="tanggal" value={this.state.tanggal} onChange={this.handleChange} class="form-control" id="tanggal"/>
+                            <div className="col mt-2">
+                              <label htmlFor="tgl">Tanggal</label>
+                                <input type="date" name="tanggal" value={this.state.tanggal} onChange={this.handleChange} className="form-control" id="tanggal"/>
                             </div>
                             <div className="col mt-2">
-                              <label for="wj">Waktu Jemput / Ambil</label>
-                                <input type="time" name="waktu" value={this.state.waktu} onChange={this.handleChange} class="form-control" id="waktuJ"/>
+                              <label htmlFor="wj">Waktu Jemput / Ambil</label>
+                                <input type="time" name="waktu" value={this.state.waktu} onChange={this.handleChange} className="form-control" id="waktuJ"/>
                             </div>
 
                             <div className="col mt-2">
